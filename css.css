@@ -1,0 +1,18 @@
+h1{
+    color:red;
+background-color: bisque;
+    text-align: center;
+    text-decoration:overline dotted 15px yellow;
+}
+p{
+color:blue;
+}
+p.aprobados{
+    color:green
+}
+p.suspensos{
+    color:pink
+}
+img{
+    border:10px solid red;
+}
