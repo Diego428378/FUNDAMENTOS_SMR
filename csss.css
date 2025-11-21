@@ -1,0 +1,28 @@
+body{
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+}
+h1{
+    background-color: rgb(140,198, 47);
+    margin:0;
+    padding: 30px;
+}
+span{
+    background-color: green;
+}
+ol{
+    margin: 0;
+    border: 1px solid red;
+    padding:0 ;
+}
+li{
+    background-color: rgb(90,173, 47);
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+     font-weight:bold ;
+}
+
+
+    
