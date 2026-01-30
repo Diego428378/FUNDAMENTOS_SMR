@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        input{
+            display: block;
+        }
+        input[type="submit"], input[type="reset"]{
+        background-color: red;  
+        color: white;
+        display:inline; 
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="nombre">nombre</label>
+        <input type="text" name="nombre" id="nombre" >
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido">
+
+        <label for="color">color preferido</label>
+        <input type="color" name="color" id="color">
+        
+        <label for="salario" >cuanto quieres ganar</label>
+        <input type="range" name="numero" id="numero" min="">
+
+
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input type="date" name="nacimiento" id="nacimiento">
+        
+        <label for="email">email</label>
+        <input type="email" name="email" id="email">
+
+        <label for="contrasena">contraseña</label>
+        <input type="password" name="contrasena" id="contasena">
+
+        <input type="submit" value="registrar">
+        <input type="reset" value="borrar">
+    </form>
+</body>
+</html>
