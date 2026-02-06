@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script>
+        //alert("hola, mundo");
+        function procesarDatos(){
+            if(nombre==""){
+                alert("no has escrito tu nombre, lonchas");
+                return false;
+            }
+            else{
+                mensaje.innerHTML="Su usuario se ha registrado con éxito, ";
+                +nombre.value;
+                let num=parseInt.random()*100;
+                identificado.value=nombre.value+num;
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <p id="mensaje"></p>
+    <form action="#" onsubmit="return procesarDatos()">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+    <label for="identificador">identificador</label>
+    <input type="text" name="identificador" id="identificador" readonly>
+    <input type="submit">
+    </form>
+</body>
+</html>

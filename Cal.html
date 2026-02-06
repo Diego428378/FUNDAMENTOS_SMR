@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de verdad</title>
+    <script>
+        let texto="";
+        function escribir(num){
+            texto=texto+num;
+            resultado.value=texto;
+        }
+        function solucion(){
+            let resultadoFinal=eval(texto);
+            resultado.value=resultadoFinal;
+        }
+        function borrar(){
+            texto=""
+            resultado.value="";
+        }
+    </script>
+</head>
+<body>
+    <form action="#">
+    <input type="text" id="resultado" name="resultado">
+    <main>
+    <article>
+        <button onclick="escribir('1')">1</button>
+        <button onclick="escribir('2')">2</button>
+        <button onclick="escribir('3')">3</button>
+    </article>
+    <article>
+        <button onclick="escribir('4')">4</button>
+        <button onclick="escribir('5')">5</button>
+        <button onclick="escribir('6')">6</button>
+    </article>
+      <article>
+        <button onclick="escribir('7')">7</button>
+        <button onclick="escribir('8')">8</button>
+        <button onclick="escribir('9')">9</button>
+      </article>
+      <article>
+        <button onclick="escribir('0')">0</button>
+        <button onclick="escribir('+')">+</button>
+        <button onclick="escribir('-')">-</button>
+      </article>
+      <article>
+        <button onclick="escribir('*')">*</button>
+        <button onclick="escribir('/')">/</button>
+        <button onclick="solucion('=')">=</button>
+      </article>
+      <article>
+        <button onclick="borrar()">borrar</button>
+      </article>
+    </main>
+    
+</body>
+</html>
