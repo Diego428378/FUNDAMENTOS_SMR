@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia de lluvia en Madrid</title>
+
+</head>
+<body>
+ <p id="texto"></p>   
+</body>
+</html>
+ <script>
+        let llueve=confirm("¿Llueve?");
+        let sales=confirm("¿sales a la calle, campeón");
+        let paraguas=confirm("¿Llevas paraguas?")
+        let gorro=confirm("¿llevo gorro?")
+        let calvo=confirm("¿eres calvo?")
+        // console.log(llueve);
+        if(llueve){
+        texto.innerHTML+="<p><b>llueve</b></p>";
+        }
+        else{
+            texto.innerHTML+="<p>no llueve</p>";
+        }
+        if(sales){
+            // texto.innerHTML="<p><b>Sales</b></
+            // p>"; 
+            texto.innerHTML+="<p><b>Sales</b/<p/>"
+        }
+        else{
+            // texto.innerHTML=texto.innerHTML+"<p>no sales</p>";
+        }
+        if(paraguas){
+            texto.innerHTML+="<p><b>LLevo paraguas</b/<p/>";
+        }
+        else{
+           texto.innerHTML+="<p><b>No Llevo paraguas</b/<p/>"; 
+        }
+        if(gorro){
+            texto.innerHTML+="<p><b>Llevo gorro</b/<p/>";
+        }
+        else{
+         texto.innerHTML+="<p><b>No llevo gorro</b/<p/>";
+        }
+        if(calvo){
+        texto.innerHTML+="<p><b>Soy calvo</b/<p/>";    
+        }
+        else{
+          texto.innerHTML+="<p><b>No soy calvo</b/<p/>";
+        }
+        if ((llueve&&sales&&!calvo)&&!(paraguas||gorro)){
+        texto.innerHTML+="<p><b>SE MOJA</b/<p/>";
+        }
+        else{
+        texto.innerHTML+="<p><b>NO SE MOJA</b/<p/>";
+        }
+    </script>
+
+
