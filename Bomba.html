@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bomba</title>
+    <script>
+        let vhora=12;
+        let vminuto=58;
+        let vsegundo=45;
+
+        let hora_bomba=12;
+        let minuto_bomba=31;
+        let segundo_bomba=16;
+        window.onload=function(){
+
+        hora.innerHTML=vhora;
+        minuto.innerHTML=vminuto;
+        segundo.innerHTML=vsegundo;
+        setInterval(reloj,1000)
+        }
+
+        function reloj(){
+            vsegundo=vsegundo+1;
+
+            if(vsegundo==60){
+                vsegundo=0;
+                vminuto+=1;
+            }
+            if(vminuto==60){
+                vminuto=0;
+                vhora+=1;
+            }
+            segundo.innerHTML=vsegundo;
+            minuto.innerHTML=vminuto;
+            hora.innerHTML=vhora
+        }
+    </script>
+</head>
+<body>
+    <p>
+        <span id="hora"></span>:<span id="minuto"></span>:<span id="segundo"></span>
+    </p>
+
+</body>
+</html>
